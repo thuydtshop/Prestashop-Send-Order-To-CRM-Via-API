@@ -9,7 +9,7 @@
 - API KEY
 
 ### Test
-- Save Endpoint API URL is http://test.eclisse-eshop.sk/phinq.php
+- Save Endpoint API URL is http://your-domain/api
 
 ### Response
 - Json data
