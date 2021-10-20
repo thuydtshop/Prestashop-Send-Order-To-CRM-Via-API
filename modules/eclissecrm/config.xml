@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>eclissecrm</name>
+	<displayName><![CDATA[Eclisse CRM]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[The module is used to connect to a CRM system that manages quotations from prestashop cart]]></description>
+	<author><![CDATA[thuydtshop@gmail.com]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
