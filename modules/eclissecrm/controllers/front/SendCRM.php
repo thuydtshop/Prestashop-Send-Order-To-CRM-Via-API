@@ -82,6 +82,13 @@ class EclissecrmSendCRMModuleFrontController extends ModuleFrontController
                                         }
                                         $customizations[ $customization['id_customization'] ][] = $texts;
                                     } else {
+                                        if (isset($field['text'])) {
+                                            $field['text'] = str_replace(["\r\n", "\r", "\n"], '', $field['text']);
+                                            $field['text'] = preg_replace('!\s+!', ' ', $field['text']);
+                                            $field['text'] = str_replace(' <', '<', $field['text']);
+                                            $field['text'] = str_replace('> ', '>', $field['text']);
+                                            $field['text'] = preg_replace('/\>\s+\</m', '><', $field['text']);
+                                        }
                                         $customizations[ $customization['id_customization'] ][] = $field;
                                     }
                                 }
